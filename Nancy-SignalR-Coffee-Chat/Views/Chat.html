@@ -1,19 +1,44 @@
 ﻿<html>
-    <head>
-        <title>
-            Chat
-        </title>
-    </head>
-    <body>
-        <script src="../scripts/jquery-2.0.0.min.js" type="text/javascript"></script>
-        <script src="../scripts/jquery.signalR-1.1.1.min.js" type="text/javascript"></script>
-        <script src="../signalr/hubs" type="text/javascript"></script>
-        <script src="../scripts/chat.min.js" type="text/javascript"></script>
-        <h3>Welcome to Chat</h3>
-        <div>
-            <input type="text" id="msg" />
-            <input type="button" id="broadcast" value="broadcast" />
-            <ul id="messages"></ul>
-        </div>
-    </body>
+<head>
+	<title>Nancy + SignalR + Coffee - Chat</title>
+	<link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="container">
+		<div class="well span10 text-center">
+			<h2 class="muted">Nancy + SignalR + Coffee - Chat</h2>
+		</div>
+
+		<div class="well span10">
+			<div class="row">
+				<div class="span10">
+					<h4><i class="icon-pencil"></i>&nbsp;Your Message</h4>
+					<textarea class="field span10" id="message" rows="3" placeholder="Enter a short synopsis"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span10 offset8">
+					<input type="button" class="btn btn-primary span2" id="sendmessage" value="Broadcast" />
+				</div>
+			</div>
+
+		</div>
+		<div class="well span10">
+			<div class="row">
+				<div class="span10">
+					<input type="hidden" id="displayname" />
+					<h4><i class="icon-bullhorn"></i>&nbsp;Discussion</h4>
+					<div id="discussion"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../scripts/jquery-2.0.0.min.js" type="text/javascript"></script>
+	<script src="../scripts/jquery.signalR-1.1.1.min.js" type="text/javascript"></script>
+	<script src="../Scripts/bootstrap.min.js"></script>
+	<script src="../signalr/hubs" type="text/javascript"></script>
+	<script src="../scripts/chat.min.js" type="text/javascript"></script>
+</body>
 </html>
