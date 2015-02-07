@@ -14,7 +14,6 @@ namespace SignalR_Chat
 			base.ApplicationStartup(container, pipelines);
 			this.Conventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("Scripts"));
 			CookieBasedSessions.Enable(pipelines);
-			RouteTable.Routes.MapHubs();
 		}
 	}
 }
