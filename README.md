@@ -1,4 +1,4 @@
-Nancy-SignalR-Coffee-Chat
+Nancy-SignalR-Canonical-Chat
 =========================
 
 A bare bones SignalR chat app using NancyFX and Coffeescript
