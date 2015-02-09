@@ -5,7 +5,7 @@ using Nancy.Session;
 using Nancy.TinyIoc;
 using System.Web.Routing;
 
-namespace SignalR_Chat
+namespace NancySignalRCanonicalChat
 {
 	public class Bootstrapper : DefaultNancyBootstrapper
 	{

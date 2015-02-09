@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.SignalR;
 
-namespace SignalR_Chat
+namespace NancySignalRCanonicalChat
 {
 	public class ChatHub : Hub
 	{
